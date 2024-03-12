@@ -1,0 +1,30 @@
+{
+    "collections": {
+      "bookservices": {
+        "Date": "String",
+        "Name": "String",
+        "Phno": "Number",
+        "EmailId": "String",
+        "service": "String",
+        "message": "String"
+      },
+      "login": {
+        "email": "String",
+        "password": "String"
+      }
+    },
+    "indexes": {
+      "bookservices": [
+        { "field": "Name", "type": "text" },
+        { "field": "Phno", "type": "number" },
+        { "field": "EmailId", "type": "text" },
+        { "field": "service", "type": "text" },
+        { "field": "message", "type": "text" }
+      ],
+      "login": [
+        { "field": "email", "type": "text" },
+        { "field": "password", "type": "text" }
+      ]
+    }
+  }
+  
